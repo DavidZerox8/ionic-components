@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Regresar" color="primary" mode="md"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title color="primary">Avatar</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <!-- <img src="/assets/images/stan-lee.jpg" /> --> <!-- NO utiliza Lazy Load -->
+        <ion-img src="/assets/images/stan-lee.jpg"></ion-img> <!-- Utiliza Lazy Load -->
+      </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-chip color="primary" outline="true">
+    <ion-avatar>
+      <ion-img src="/assets/images/stan-lee.jpg"></ion-img>
+    </ion-avatar>
+    <ion-label>Default</ion-label>
+  </ion-chip>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="/assets/images/stan-lee.jpg"></ion-img>
+      </ion-avatar>
+      <ion-label>Stan Lee</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

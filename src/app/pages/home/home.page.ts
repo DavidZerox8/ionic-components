@@ -24,6 +24,11 @@ export class HomePage {
       icon: 'disc-sharp',
       name: 'Alert',
       redirectTo: '/alert',
+    },
+    {
+      icon: 'person-circle-sharp',
+      name: 'Avatar',
+      redirectTo: '/avatar',
     }
   ];
 

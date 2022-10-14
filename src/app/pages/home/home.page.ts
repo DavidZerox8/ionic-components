@@ -29,6 +29,11 @@ export class HomePage {
       icon: 'person-circle-sharp',
       name: 'Avatar',
       redirectTo: '/avatar',
+    },
+    {
+      icon: 'ellipsis-horizontal-circle-sharp',
+      name: 'Button',
+      redirectTo: '/button',
     }
   ];
 

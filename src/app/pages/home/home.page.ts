@@ -34,6 +34,11 @@ export class HomePage {
       icon: 'ellipsis-horizontal-circle-sharp',
       name: 'Button',
       redirectTo: '/button',
+    },
+    {
+      icon: 'id-card-sharp',
+      name: 'Card',
+      redirectTo: '/card',
     }
   ];
 

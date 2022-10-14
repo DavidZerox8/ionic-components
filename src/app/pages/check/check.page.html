@@ -1,0 +1,29 @@
+<app-header titulo="checkbox"></app-header>
+
+<ion-content class="ion-padding">
+  <h3>Basic</h3>
+  <ion-item>
+    <ion-checkbox slot="start"></ion-checkbox>
+    <ion-label>I agree to the terms and conditions</ion-label>
+  </ion-item>
+
+  <h3>Indeterminate Checkboxes</h3>
+  <ion-item>
+    <ion-checkbox slot="start" [indeterminate]="true"></ion-checkbox>
+    <ion-label>Indeterminate checkbox</ion-label>
+  </ion-item>
+
+  <h3>Theming</h3>
+
+  <ion-list>
+    <ion-item *ngFor="let item of data" (click)="onClick( item )">
+      <ion-label>{{ item.name }}</ion-label>
+      <ion-checkbox slot="end" [color]="item.name" [(ngModel)]="item.selected"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="showData()" expand="block" shape="round">
+    Ver datos
+  </ion-button>
+
+</ion-content>

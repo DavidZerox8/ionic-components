@@ -39,6 +39,11 @@ export class HomePage {
       icon: 'id-card-sharp',
       name: 'Card',
       redirectTo: '/card',
+    },
+    {
+      icon: 'checkmark-done-circle-sharp',
+      name: 'Check',
+      redirectTo: '/check',
     }
   ];
 
